@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>時間線 - JStorage</title>
+
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/local.css" />
+
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>   
+
+      <style>
+		a:link{
+		text-decoration: none;
+		color:#CCCCCC;
+		}
+        div {
+            padding-bottom:20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="wrapper">
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Back to JStorage</a>
+            </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul id="active" class="nav navbar-nav side-nav">
+                    <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>                 
+                    <li><a href="blog.jsp"><i class="fa fa-bookmark"></i> Blog</a></li>
+                    <li><a href="signup.html"><i class="fa fa-envelope-o"></i> Subscribe</a></li>
+                    <li><a href="register.html"><i class="fa fa-user"></i> Register</a></li>
+                    <li  class="selected"><a href="timeline.html"><i class="fa fa-clock-o"></i> Timeline</a></li>
+                    <li><a href="code.jsp"><i class="fa fa-pencil-square-o"></i> Forms</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right navbar-user">
+                    <li class="dropdown messages-dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> Messages <span class="badge">2</span> <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-header">2 New Messages</li>
+                            <li class="message-preview">
+                                <a href="#">
+                                    <span class="avatar"><i class="fa fa-bell"></i></span>
+                                    <span class="message">Security alert</span>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li class="message-preview">
+                                <a href="#">
+                                    <span class="avatar"><i class="fa fa-bell"></i></span>
+                                    <span class="message">Security alert</span>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="#">Go to Inbox <span class="badge">2</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown user-dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Steve Miller<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
+                            <li><a href="#"><i class="fa fa-gear"></i> Settings</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#"><i class="fa fa-power-off"></i> Log Out</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="divider-vertical"></li>
+                    <li>
+                        <form class="navbar-search">
+                            <input type="text" placeholder="Search" class="form-control">
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+         <hr />
+        <div class="container">
+            <div class="page-header">
+                <h1 id="timeline">前端开发 & JStorage的发展历程</h1>
+            </div>
+            <ul class="timeline">
+                <li class="timeline-inverted">
+                    <div class="timeline-badge"><i class="fa fa-check"></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">HTML初现</h4>
+                            <span><i class="fa fa-clock-o fa-2x"></i> 20世纪末</span>
+                            <hr />
+                        </div>
+                        <div class="timeline-body">
+                             <p>HTML 1并不曾存在，HTML的第一个官方版本就是由IETF（互联网工程任务组）推出的HTML 2.0。问世之前，这个版本中的很多细则已经被实现，比如，1994年的Mosaic浏览器已经实现了在文档中嵌入图片的方法，后来HTML 2.0便吸纳了img这个标签。
+后来，W3C取代IETF的角色，成为HTML的标准组织，1990年代的后半页，HTML的版本被频繁修改，直到1999年的HTML 4.01， 至此，HTML到达了它的第一个拐点。
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-badge danger"><i class="fa fa-plus-square-o"></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">XHTML登堂入室</h4>
+                            <span><i class="fa fa-clock-o fa-2x"></i> 20世纪初</span>
+                            <hr />
+                        </div>
+                        <div class="timeline-body">
+                             <p>2000年底，国际W3C组织（万维网联盟）组织公布发行了XHTML 1.0版本。XHTML 1.0是一种在HTML 4.0基础上优化和改进的的新语言，目的是基于XML应用。XHTML是一种增强了的HTML,XHTML 是更严谨更纯净的 HTML 版本。它的可扩展性和灵活性将适应未来网络应用更多的需求。XML虽然数据转换能力强大，完全可以替代HTML，但面对成千上万已有的基于HTML语言设计的网站，直接采用XML还为时过早。因此，在HTML4.0的基础上，用XML的规则对其进行扩展，得到了XHTML。所以，建立XHTML的目的就是实现HTML向XML的过渡。国际上在网站设计中推崇的WEB标准就是基于XHTML的应用（即通常所说的CSS+DIV）。
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                   <div class="timeline-badge info"><i class="fa fa-tint"></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">HTML5的艰难诞生</h4>
+                            <span><i class="fa fa-clock-o fa-2x"></i> 2006年~2014年</span>
+                            <hr />
+                        </div>
+                        <div class="timeline-body">
+                             <p>标准通用标记语言下的一个应用HTML标准自1999年12月发布的HTML4.01后，后继的HTML5和其它标准被束之高阁，为了推动Web标准化运动的发展，一些公司联合起来，成立了一个叫做 Web Hypertext Application Technology Working Group （Web超文本应用技术工作组 -WHATWG） 的组织。WHATWG 致力于 Web 表单和应用程序，而W3C（World Wide Web Consortium，万维网联盟） 专注于XHTML2.0。在 2006 年，双方决定进行合作，来创建一个新版本的 HTML。然而，主打移动端的HTML5却使得纯HTML5手机应用运行缓慢并错漏百出，但优化后的效果会好转。尽管不是很多人愿意去做这样的优化，但依然可以去尝试。
+                            </p>
+							<p>
+							2014年10月29日，万维网联盟泪流满面地宣布，经过几乎8年的艰辛努力，HTML5标准规范终于最终制定完成了，并已公开发布。
+							</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-badge success"><i class="fa fa-sun-o"></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">JStorage网站建立</h4>
+                            <span><i class="fa fa-clock-o fa-2x"></i> 2016年7月</span>
+                            <hr />
+                        </div>
+                        <div class="timeline-body">
+                             <p>我不知道把我自己的网站跟HTML的发展历程搞到一起是不是太不知羞耻了，不过我想，利用HTML技术，让网页应用，让互联网变得更加方便与美好，让我们的生活更加优质，可以说是我的网站与互联网联盟的共同点，也将会让这个网站更好的发展下去。
+							 Comming Soon……
+                            </p>
+                        </div>
+                    </div>
+                </li>
+				<li class="timeline-inverted">
+                   <div class="timeline-badge info"><i class="fa fa-tint"></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">加入<a href="signup.html">邮件订阅</a>功能</h4>
+                            <span><i class="fa fa-clock-o fa-2x"></i> 2016年7月16日19:00</span>
+                            <hr />
+                        </div>
+                        <div class="timeline-body">
+                             <p>我使用JavamailAPI为网站加入了邮件订阅功能，通过Javamail编译了一个Javabean，在编译过程中遇到了一个问题，Import javax.mail失败，解决方案是将两个jar包复制到jdk的jre/lib/ext文件夹下。
+                            </p>
+							<p>
+							原理待查明
+							</p>
+                        </div>
+                    </div>
+                </li>
+				<li>
+                    <div class="timeline-badge success"><i class="fa fa-sun-o"></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">加入<a href="blog.jsp">文章浏览</a>功能</h4>
+                            <span><i class="fa fa-clock-o fa-2x"></i> 2016年7月17日10:30</span>
+                            <hr />
+                        </div>
+                        <div class="timeline-body">
+                             <p>加入了文章资讯浏览的功能，评论及注册功能尚未开发。
+                            </p>
+                        </div>
+                    </div>
+                </li>
+				<li class="timeline-inverted">
+                   <div class="timeline-badge info"><i class="fa fa-tint"></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">加入<a href="code.jsp">代码生成</a>功能</h4>
+                            <span><i class="fa fa-clock-o fa-2x"></i> 2016年7月18日16:00</span>
+                            <hr />
+                        </div>
+                        <div class="timeline-body">
+                             <p>现在在form页面可以在线生成和预览代码了！目前有预定义好的模板3个！
+                            </p>
+							<p>
+							比我设想中的困难了好多……
+							</p>
+                        </div>
+                    </div>
+                </li>				
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
